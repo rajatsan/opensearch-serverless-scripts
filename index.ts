@@ -50,7 +50,7 @@ const writeDocuments = async (
 };
 
 const readSingleDocument = async (docId: string) => {
-  const hostname = "clsne9j4ezyhq36hpjgc.us-west-2.aoss.amazonaws.com";
+  const hostname = "xyz.us-west-2.aoss.amazonaws.com";
   const signedHttpRequest = await createSignedHttpRequest({
     method: "GET",
     headers: {
@@ -94,7 +94,7 @@ const readSingleDocument = async (docId: string) => {
 // Handler to update documents
 const writeSingleDocument = async (docId: string) => {
   const body = JSON.stringify(samplePayload);
-  const hostname = "clsne9j4ezyhq36hpjgc.us-west-2.aoss.amazonaws.com";
+  const hostname = "xyz.us-west-2.aoss.amazonaws.com";
   const signedHttpRequest = await createSignedHttpRequest({
     method: "PUT",
     body,
